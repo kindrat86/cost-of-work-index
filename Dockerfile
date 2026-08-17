@@ -3,5 +3,7 @@
 FROM node:20-slim
 WORKDIR /app
 COPY . .
-RUN npm ci --omit=dev && npm run build
+# devDependencies (typescript) are required for the tsc build step, so a plain
+# install, not --omit=dev. Glama builds this image to introspect the server.
+RUN npm ci && npm run build
 ENTRYPOINT ["node", "dist/server.js"]
