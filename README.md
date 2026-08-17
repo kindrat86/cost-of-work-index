@@ -78,3 +78,18 @@ cite with attribution.
 - Machine-readable REST API (no key, CORS open):
   https://hirenika.com/api/v1/cost-of-work
 - Nika, the AI employees behind the per-unit pricing: https://hirenika.com
+
+## MCP server
+
+The index ships as an MCP server so agents can query it directly:
+
+```
+npx -y nika-cost-of-work-mcp
+```
+
+Five tools: list all tasks, get per-unit cost for a task and market, estimate
+monthly/annual cost from a volume, list the official sources, and export the
+whole index as JSON. The dataset is bundled, so the server answers offline;
+no API key is required. The server source lives in this repository
+(`src/`, `Dockerfile`), and the npm package is published from the hirenika
+repository where the data snapshot is generated, never hand-edited.

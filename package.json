@@ -1,0 +1,51 @@
+{
+  "name": "nika-cost-of-work-mcp",
+  "version": "2026.3.0",
+  "mcpName": "io.github.kindrat86/cost-of-work",
+  "description": "MCP server for the Cost of Work Index — per-unit cost of 13 back-office tasks done by a person vs by software, across the US, Greece and Ukraine, with sources.",
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "model-context-protocol",
+    "cost",
+    "labour-cost",
+    "labor-cost",
+    "small-business",
+    "bookkeeping",
+    "automation",
+    "open-data"
+  ],
+  "homepage": "https://hirenika.com/mcp",
+  "license": "CC-BY-4.0",
+  "author": "Nika (hirenika.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kindrat86/hirenika.git",
+    "directory": "packages/cost-of-work-mcp"
+  },
+  "type": "module",
+  "bin": {
+    "nika-cost-of-work-mcp": "dist/server.js"
+  },
+  "main": "dist/server.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  }
+}

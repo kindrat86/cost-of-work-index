@@ -1,0 +1,21 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": ["kindrat86"],
+  "name": "cost-of-work",
+  "description": "Per-unit cost of 13 back-office tasks done by a person vs by software, in the US, Greece and Ukraine, with an official statistic behind every hourly wage. Bundled data, works offline.",
+  "type": "mcp_server",
+  "status": "production",
+  "framework": "Node.js",
+  "tools": 5,
+  "transport": ["stdio"],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "cost",
+    "labour-cost",
+    "small-business",
+    "bookkeeping",
+    "automation",
+    "open-data"
+  ]
+}
