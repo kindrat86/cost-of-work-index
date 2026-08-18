@@ -2,7 +2,7 @@
   "name": "nika-cost-of-work-mcp",
   "version": "2026.3.0",
   "mcpName": "io.github.kindrat86/cost-of-work",
-  "description": "MCP server for the Cost of Work Index — per-unit cost of 13 back-office tasks done by a person vs by software, across the US, Greece and Ukraine, with sources.",
+  "description": "MCP server for the Cost of Work Index: per-unit cost of 13 back-office tasks done by a person vs by software, across the US, Greece and Ukraine, with sources.",
   "keywords": [
     "mcp",
     "modelcontextprotocol",
@@ -16,7 +16,7 @@
     "open-data"
   ],
   "homepage": "https://hirenika.com/mcp",
-  "license": "CC-BY-4.0",
+  "license": "MIT",
   "author": "Nika (hirenika.com)",
   "repository": {
     "type": "git",

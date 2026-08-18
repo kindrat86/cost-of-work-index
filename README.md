@@ -2,7 +2,7 @@
 
 Per-unit human labour cost vs. AI-employee cost across 13 back-office tasks in
 three markets (United States, Greece, Ukraine). A small, fully-sourced dataset
-published under CC BY 4.0.
+published under CC BY 4.0, with an MIT-licensed MCP server.
 
 ## What this measures
 
@@ -58,8 +58,9 @@ estimates:
 
 ## License
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): free to use and
-cite with attribution.
+- Code (`src/`, `Dockerfile`): MIT. See [LICENSE](LICENSE).
+- Data (`data/`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): free
+  to use and cite with attribution.
 
 ## Citation
 
